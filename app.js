@@ -5,6 +5,12 @@ app.get('/',function (req , res) {
   res.json('OK');
 });
 
-app.listen(3000, function () {
-  console.log('this app is running on port 3000');
-});
+
+// encapsulamos la aplicacion en un modulo de node
+module.exports = app;
+
+// por una convencion y hacer test unitarios sencillos
+ // la aplicacion se ejecuta en bin/www
+// $ ./bin/www
+
+// para hacer ese archivo ejecutable se debe correr el comando chmod +x bin/www
