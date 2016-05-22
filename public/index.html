@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Express app</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+	<h1 class="text-center text-uppercase title">Building Blocks!</h1>
+	<!-- <img src="tree.jpg"> -->
+
+	<!-- Create Block Form -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4-offset-4 create-block-container">
+				<form class="create-block-form" action="index.html" method="post">
+					<legend>New Block</legend>
+					<input type="text" class="form-control" name="name"placeholder="Name"><br>
+					<input type="text" class="form-control" name="description" placeholder="Description"><br>
+					<input type="Submit" class="btn btn-primary" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+<!-- End Create Block Form -->
+	<br><br>
+
+<!-- Block List -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4-offset-4 block-list-container">
+					<ul class="block-list"></ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <script type="text/javascript" src="jquery-1.12.3.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+	</body>
+</html>

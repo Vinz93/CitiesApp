@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.get('/',function (req , res) {
-  res.json('OK');
-});
+app.use(express.static('public'));
 
+app.get('/cities',function (req , res) {
+  var cities = ['Canada','Australia','Espana'];
+   res.json(cities);
+})
 
 // encapsulamos la aplicacion en un modulo de node
 module.exports = app;
