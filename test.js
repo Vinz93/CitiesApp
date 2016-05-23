@@ -8,6 +8,16 @@ describe('Request to the root path', function () {
       .get('/')
       .expect(200,done());
   });
+  it(' Returns a HTML format',function (done) {
+    request(app)
+    .get('/')
+    .expect('Content-Type',/html/,done);
+  });
+  // it('Returns an index file with cities',function (done) {
+  //   request(app)
+  //   .get('/')
+  //   .expect(/cities/i, done);
+  // });
 });
 
 describe('Listing cities on /cities', function () {
@@ -23,9 +33,33 @@ describe('Listing cities on /cities', function () {
     .expect('Content-Type','application/json; charset=utf-8',done);
   });
 
-  it('Returns initial cities', function (done) {
+  // it('Returns initial cities', function (done) {
+  //   request(app)
+  //   .get('/cities')
+  //   .expect(JSON.stringify(['Canada','Australia','Espana']),done);
+  // });
+});
+
+describe('Creating new cities',function() {
+  it('Returns a 201 status', function(done) {
     request(app)
-    .get('/cities')
-    .expect(JSON.stringify(['Canada','Australia','Espana']),done);
-  })
+    .post('/cities')
+    .send('name=Italia&description=torino+is+beatiful')
+    .expect(201,done);
+  });
+
+  it('Return the city name', function (done) {
+    request(app)
+    .post('/cities')
+    .send('name=Italia&description=torino+is+beatiful')
+    .expect(/Italia/i,done);
+  });
+});
+
+describe('Deleting cities', function () {
+  it('Returns status code 204 no content',function (done) {
+    request(app)
+    .delete('/cities/Italia')
+    .expect(204,done);
+  });
 });

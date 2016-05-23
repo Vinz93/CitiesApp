@@ -1,14 +1,16 @@
 $(function(){
 
+// index
 	$.get('/cities' , appendToList);
 
+// delete
 	$('.block-list').on('click', 'i[data-block]', function(event){
 			if(!confirm('Are you sure')){
 				return false;
 			}
 			var target = $(event.currentTarget);
 			$.ajax({
-			type:	'DELETE', url: '/blocks/' + target.data('block')
+			type:	'DELETE', url: '/cities/' + target.data('block')
 			}).done(function(){
 				target.parents('li').remove();
 			});

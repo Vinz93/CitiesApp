@@ -1,0 +1,663 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'hiredis',
+1 verbose cli   '--save' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json soupBits_app@1.0.0 No description
+5 warn package.json soupBits_app@1.0.0 No repository field.
+6 warn package.json soupBits_app@1.0.0 No README data
+7 silly cache add args [ 'hiredis', null ]
+8 verbose cache add spec hiredis
+9 silly cache add parsed spec { raw: 'hiredis',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'hiredis',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed hiredis@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'hiredis', range: '*', hasData: false }
+14 silly mapToRegistry name hiredis
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/hiredis
+18 verbose addNameRange registry:https://registry.npmjs.org/hiredis not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/hiredis
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 3:59:11 PM
+22 verbose request id ab941152e896a27e
+23 verbose etag "5BXZAOLDHDWJFSNDNU48DG58"
+24 http request GET https://registry.npmjs.org/hiredis
+25 http 304 https://registry.npmjs.org/hiredis
+26 silly get cb [ 304,
+26 silly get   { date: 'Sun, 22 May 2016 19:58:59 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"5BXZAOLDHDWJFSNDNU48DG58"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-iad2140-IAD',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1463947139.368529,VS0,VE78',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/hiredis from cache
+28 verbose get saving hiredis to C:\Users\Vicente01\AppData\Roaming\npm-cache\registry.npmjs.org\hiredis\.cache.json
+29 silly addNameRange number 2 { name: 'hiredis', range: '*', hasData: true }
+30 silly addNameRange versions [ 'hiredis',
+30 silly addNameRange   [ '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.1.8',
+30 silly addNameRange     '0.1.9',
+30 silly addNameRange     '0.1.10',
+30 silly addNameRange     '0.1.12',
+30 silly addNameRange     '0.1.13',
+30 silly addNameRange     '0.1.14',
+30 silly addNameRange     '0.1.15',
+30 silly addNameRange     '0.1.16',
+30 silly addNameRange     '0.1.17',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1' ] ]
+31 verbose addNamed hiredis@0.4.1
+32 silly addNamed semver.valid 0.4.1
+33 silly addNamed semver.validRange 0.4.1
+34 silly cache afterAdd hiredis@0.4.1
+35 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\hiredis\0.4.1\package\package.json not in flight; writing
+36 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\hiredis\0.4.1\package\package.json written
+37 silly install resolved [ { name: 'hiredis',
+37 silly install resolved     description: 'Wrapper for reply processing code in hiredis',
+37 silly install resolved     version: '0.4.1',
+37 silly install resolved     homepage: 'http://github.com/redis/hiredis-node',
+37 silly install resolved     author: { name: 'Jan-Erik Rediger', email: 'janerik@fnordig.de' },
+37 silly install resolved     contributors: [ [Object] ],
+37 silly install resolved     main: 'hiredis',
+37 silly install resolved     scripts:
+37 silly install resolved      { test: 'node test/reader.js && node test/writer.js',
+37 silly install resolved        install: 'node-gyp rebuild' },
+37 silly install resolved     dependencies: { bindings: '*', nan: '^2.0.5' },
+37 silly install resolved     engines: { node: '>= 0.8.0' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/redis/hiredis-node.git' },
+37 silly install resolved     bugs: { url: 'https://github.com/redis/hiredis-node/issues' },
+37 silly install resolved     license: 'BSD-3-Clause',
+37 silly install resolved     gypfile: true,
+37 silly install resolved     gitHead: 'bed20ca1fadf28945e7a78c5f6bf68d27479504b',
+37 silly install resolved     _id: 'hiredis@0.4.1',
+37 silly install resolved     _shasum: 'aab4dcfd0fc4cbdb219d268005f2335a3c639e8f',
+37 silly install resolved     _from: 'hiredis@*',
+37 silly install resolved     _npmVersion: '2.14.0',
+37 silly install resolved     _nodeVersion: '0.12.7',
+37 silly install resolved     _npmUser: { name: 'badboy_', email: 'janerik@fnordig.de' },
+37 silly install resolved     maintainers: [ [Object], [Object] ],
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'aab4dcfd0fc4cbdb219d268005f2335a3c639e8f',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/hiredis/-/hiredis-0.4.1.tgz' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/hiredis/-/hiredis-0.4.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install hiredis@0.4.1 into c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+39 info installOne hiredis@0.4.1
+40 verbose installOne of hiredis to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app not in flight; installing
+41 verbose lock using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\hiredis-880c4013c407f704.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+42 silly install write writing hiredis 0.4.1 to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+43 silly cache addNamed cb hiredis@0.4.1
+44 verbose unbuild node_modules\hiredis
+45 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis is being purged from base c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+46 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+47 verbose tar unpack C:\Users\Vicente01\AppData\Roaming\npm-cache\hiredis\0.4.1\package.tgz
+48 verbose tar unpacking to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+49 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis is being purged
+50 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+51 silly gunzTarPerm modes [ '777', '666' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+58 silly gunzTarPerm extractEntry hiredis.js
+59 silly gunzTarPerm modified mode [ 'hiredis.js', 420, 438 ]
+60 silly gunzTarPerm extractEntry bench.js
+61 silly gunzTarPerm modified mode [ 'bench.js', 420, 438 ]
+62 silly gunzTarPerm extractEntry CHANGELOG.md
+63 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+64 silly gunzTarPerm extractEntry Makefile
+65 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+66 silly gunzTarPerm extractEntry appveyor.yml
+67 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 438 ]
+68 silly gunzTarPerm extractEntry .gitmodules
+69 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+70 silly gunzTarPerm extractEntry binding.gyp
+71 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+72 silly gunzTarPerm extractEntry deps/hiredis/.npmignore
+73 silly gunzTarPerm modified mode [ 'deps/hiredis/.npmignore', 420, 438 ]
+74 silly gunzTarPerm extractEntry deps/hiredis/README.md
+75 silly gunzTarPerm modified mode [ 'deps/hiredis/README.md', 420, 438 ]
+76 silly gunzTarPerm extractEntry deps/hiredis/CHANGELOG.md
+77 silly gunzTarPerm modified mode [ 'deps/hiredis/CHANGELOG.md', 420, 438 ]
+78 silly gunzTarPerm extractEntry deps/hiredis/COPYING
+79 silly gunzTarPerm modified mode [ 'deps/hiredis/COPYING', 420, 438 ]
+80 silly gunzTarPerm extractEntry deps/hiredis/Makefile
+81 silly gunzTarPerm modified mode [ 'deps/hiredis/Makefile', 420, 438 ]
+82 silly gunzTarPerm extractEntry deps/hiredis/win32.h
+83 silly gunzTarPerm modified mode [ 'deps/hiredis/win32.h', 420, 438 ]
+84 silly gunzTarPerm extractEntry deps/hiredis/adapters/ae.h
+85 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/ae.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry deps/hiredis/adapters/glib.h
+87 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/glib.h', 420, 438 ]
+88 silly gunzTarPerm extractEntry deps/hiredis/adapters/libev.h
+89 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/libev.h', 420, 438 ]
+90 silly gunzTarPerm extractEntry deps/hiredis/adapters/libevent.h
+91 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/libevent.h', 420, 438 ]
+92 silly gunzTarPerm extractEntry deps/hiredis/adapters/libuv.h
+93 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/libuv.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry deps/hiredis/async.c
+95 silly gunzTarPerm modified mode [ 'deps/hiredis/async.c', 420, 438 ]
+96 silly gunzTarPerm extractEntry deps/hiredis/async.h
+97 silly gunzTarPerm modified mode [ 'deps/hiredis/async.h', 420, 438 ]
+98 silly gunzTarPerm extractEntry deps/hiredis/dict.c
+99 silly gunzTarPerm modified mode [ 'deps/hiredis/dict.c', 420, 438 ]
+100 silly gunzTarPerm extractEntry deps/hiredis/dict.h
+101 silly gunzTarPerm modified mode [ 'deps/hiredis/dict.h', 420, 438 ]
+102 silly gunzTarPerm extractEntry deps/hiredis/.travis.yml
+103 silly gunzTarPerm modified mode [ 'deps/hiredis/.travis.yml', 420, 438 ]
+104 silly gunzTarPerm extractEntry deps/hiredis/fmacros.h
+105 silly gunzTarPerm modified mode [ 'deps/hiredis/fmacros.h', 420, 438 ]
+106 silly gunzTarPerm extractEntry deps/hiredis/hiredis.c
+107 silly gunzTarPerm modified mode [ 'deps/hiredis/hiredis.c', 420, 438 ]
+108 silly gunzTarPerm extractEntry deps/hiredis/hiredis.h
+109 silly gunzTarPerm modified mode [ 'deps/hiredis/hiredis.h', 420, 438 ]
+110 silly gunzTarPerm extractEntry deps/hiredis/net.c
+111 silly gunzTarPerm modified mode [ 'deps/hiredis/net.c', 420, 438 ]
+112 silly gunzTarPerm extractEntry deps/hiredis/net.h
+113 silly gunzTarPerm modified mode [ 'deps/hiredis/net.h', 420, 438 ]
+114 silly gunzTarPerm extractEntry deps/hiredis/read.c
+115 silly gunzTarPerm modified mode [ 'deps/hiredis/read.c', 420, 438 ]
+116 silly gunzTarPerm extractEntry deps/hiredis/read.h
+117 silly gunzTarPerm modified mode [ 'deps/hiredis/read.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry deps/hiredis/sds.c
+119 silly gunzTarPerm modified mode [ 'deps/hiredis/sds.c', 420, 438 ]
+120 silly gunzTarPerm extractEntry deps/hiredis/sds.h
+121 silly gunzTarPerm modified mode [ 'deps/hiredis/sds.h', 420, 438 ]
+122 silly gunzTarPerm extractEntry deps/hiredis/test.c
+123 silly gunzTarPerm modified mode [ 'deps/hiredis/test.c', 420, 438 ]
+124 silly gunzTarPerm extractEntry deps/hiredis/examples/example-ae.c
+125 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example-ae.c', 420, 438 ]
+126 silly gunzTarPerm extractEntry deps/hiredis/examples/example-glib.c
+127 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example-glib.c', 420, 438 ]
+128 silly gunzTarPerm extractEntry deps/hiredis/examples/example-libev.c
+129 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example-libev.c', 420, 438 ]
+130 silly gunzTarPerm extractEntry deps/hiredis/examples/example-libevent.c
+131 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example-libevent.c', 420, 438 ]
+132 silly gunzTarPerm extractEntry deps/hiredis/examples/example-libuv.c
+133 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example-libuv.c', 420, 438 ]
+134 silly gunzTarPerm extractEntry deps/hiredis/examples/example.c
+135 silly gunzTarPerm modified mode [ 'deps/hiredis/examples/example.c', 420, 438 ]
+136 silly gunzTarPerm extractEntry deps/hiredis.gyp
+137 silly gunzTarPerm modified mode [ 'deps/hiredis.gyp', 420, 438 ]
+138 silly gunzTarPerm extractEntry COPYING
+139 silly gunzTarPerm modified mode [ 'COPYING', 420, 438 ]
+140 silly gunzTarPerm extractEntry src/hiredis.cc
+141 silly gunzTarPerm modified mode [ 'src/hiredis.cc', 420, 438 ]
+142 silly gunzTarPerm extractEntry src/reader.cc
+143 silly gunzTarPerm modified mode [ 'src/reader.cc', 420, 438 ]
+144 silly gunzTarPerm extractEntry src/reader.h
+145 silly gunzTarPerm modified mode [ 'src/reader.h', 420, 438 ]
+146 silly gunzTarPerm extractEntry .travis.yml
+147 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+148 silly gunzTarPerm extractEntry run-all.sh
+149 silly gunzTarPerm modified mode [ 'run-all.sh', 493, 511 ]
+150 silly gunzTarPerm extractEntry test/reader.js
+151 silly gunzTarPerm modified mode [ 'test/reader.js', 420, 438 ]
+152 silly gunzTarPerm extractEntry test/testlib.js
+153 silly gunzTarPerm modified mode [ 'test/testlib.js', 420, 438 ]
+154 silly gunzTarPerm extractEntry test/writer.js
+155 silly gunzTarPerm modified mode [ 'test/writer.js', 420, 438 ]
+156 info preinstall hiredis@0.4.1
+157 silly prepareForInstallMany adding bindings@* from hiredis dependencies
+158 silly prepareForInstallMany adding nan@^2.0.5 from hiredis dependencies
+159 silly cache add args [ 'bindings@*', null ]
+160 verbose cache add spec bindings@*
+161 silly cache add parsed spec { raw: 'bindings@*',
+161 silly cache add   scope: null,
+161 silly cache add   name: 'bindings',
+161 silly cache add   rawSpec: '*',
+161 silly cache add   spec: '*',
+161 silly cache add   type: 'range' }
+162 verbose addNamed bindings@*
+163 silly addNamed semver.valid null
+164 silly addNamed semver.validRange *
+165 silly addNameRange { name: 'bindings', range: '*', hasData: false }
+166 silly mapToRegistry name bindings
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry uri https://registry.npmjs.org/bindings
+170 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+171 silly cache add args [ 'nan@^2.0.5', null ]
+172 verbose cache add spec nan@^2.0.5
+173 silly cache add parsed spec { raw: 'nan@^2.0.5',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'nan',
+173 silly cache add   rawSpec: '^2.0.5',
+173 silly cache add   spec: '>=2.0.5 <3.0.0',
+173 silly cache add   type: 'range' }
+174 verbose addNamed nan@>=2.0.5 <3.0.0
+175 silly addNamed semver.valid null
+176 silly addNamed semver.validRange >=2.0.5 <3.0.0
+177 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
+178 silly mapToRegistry name nan
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry uri https://registry.npmjs.org/nan
+182 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+183 verbose request uri https://registry.npmjs.org/bindings
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 3:59:12 PM
+186 verbose etag "5MNVCWCD1NYN71LZKTD8QDCME"
+187 http request GET https://registry.npmjs.org/bindings
+188 verbose request uri https://registry.npmjs.org/nan
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 3:59:12 PM
+191 verbose etag "24B26O57Z0ASCDVIYEYKA8KVW"
+192 http request GET https://registry.npmjs.org/nan
+193 http 304 https://registry.npmjs.org/bindings
+194 silly get cb [ 304,
+194 silly get   { date: 'Sun, 22 May 2016 19:59:00 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=300',
+194 silly get     etag: '"5MNVCWCD1NYN71LZKTD8QDCME"',
+194 silly get     age: '250',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-iad2137-IAD',
+194 silly get     'x-cache': 'HIT',
+194 silly get     'x-cache-hits': '2',
+194 silly get     'x-timer': 'S1463947140.427322,VS0,VE0',
+194 silly get     vary: 'Accept-Encoding' } ]
+195 verbose etag https://registry.npmjs.org/bindings from cache
+196 verbose get saving bindings to C:\Users\Vicente01\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+197 silly addNameRange number 2 { name: 'bindings', range: '*', hasData: true }
+198 silly addNameRange versions [ 'bindings',
+198 silly addNameRange   [ '0.0.1',
+198 silly addNameRange     '0.1.0',
+198 silly addNameRange     '0.1.1',
+198 silly addNameRange     '0.2.0',
+198 silly addNameRange     '0.2.1',
+198 silly addNameRange     '0.2.2',
+198 silly addNameRange     '0.2.3',
+198 silly addNameRange     '0.2.4',
+198 silly addNameRange     '0.3.0',
+198 silly addNameRange     '0.4.0',
+198 silly addNameRange     '1.0.0',
+198 silly addNameRange     '1.1.0',
+198 silly addNameRange     '1.1.1',
+198 silly addNameRange     '1.2.0',
+198 silly addNameRange     '1.2.1' ] ]
+199 verbose addNamed bindings@1.2.1
+200 silly addNamed semver.valid 1.2.1
+201 silly addNamed semver.validRange 1.2.1
+202 silly cache afterAdd bindings@1.2.1
+203 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+204 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+205 http 304 https://registry.npmjs.org/nan
+206 silly get cb [ 304,
+206 silly get   { date: 'Sun, 22 May 2016 19:59:00 GMT',
+206 silly get     via: '1.1 varnish',
+206 silly get     'cache-control': 'max-age=300',
+206 silly get     etag: '"24B26O57Z0ASCDVIYEYKA8KVW"',
+206 silly get     age: '191',
+206 silly get     connection: 'keep-alive',
+206 silly get     'x-served-by': 'cache-iad2139-IAD',
+206 silly get     'x-cache': 'HIT',
+206 silly get     'x-cache-hits': '3',
+206 silly get     'x-timer': 'S1463947140.433417,VS0,VE0',
+206 silly get     vary: 'Accept-Encoding' } ]
+207 verbose etag https://registry.npmjs.org/nan from cache
+208 verbose get saving nan to C:\Users\Vicente01\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+209 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
+210 silly addNameRange versions [ 'nan',
+210 silly addNameRange   [ '0.3.0-wip',
+210 silly addNameRange     '0.3.0-wip2',
+210 silly addNameRange     '0.3.0',
+210 silly addNameRange     '0.3.1',
+210 silly addNameRange     '0.3.2',
+210 silly addNameRange     '0.4.0',
+210 silly addNameRange     '0.4.1',
+210 silly addNameRange     '0.4.2',
+210 silly addNameRange     '0.4.3',
+210 silly addNameRange     '0.4.4',
+210 silly addNameRange     '0.5.0',
+210 silly addNameRange     '0.5.1',
+210 silly addNameRange     '0.5.2',
+210 silly addNameRange     '0.6.0',
+210 silly addNameRange     '0.7.0',
+210 silly addNameRange     '0.7.1',
+210 silly addNameRange     '0.8.0',
+210 silly addNameRange     '1.0.0',
+210 silly addNameRange     '1.1.0',
+210 silly addNameRange     '1.1.1',
+210 silly addNameRange     '1.1.2',
+210 silly addNameRange     '1.2.0',
+210 silly addNameRange     '1.3.0',
+210 silly addNameRange     '1.4.0',
+210 silly addNameRange     '1.4.1',
+210 silly addNameRange     '1.5.0',
+210 silly addNameRange     '1.4.2',
+210 silly addNameRange     '1.4.3',
+210 silly addNameRange     '1.5.1',
+210 silly addNameRange     '1.5.2',
+210 silly addNameRange     '1.6.0',
+210 silly addNameRange     '1.5.3',
+210 silly addNameRange     '1.6.1',
+210 silly addNameRange     '1.6.2',
+210 silly addNameRange     '1.7.0',
+210 silly addNameRange     '1.8.0',
+210 silly addNameRange     '1.8.1',
+210 silly addNameRange     '1.8.2',
+210 silly addNameRange     '1.8.3',
+210 silly addNameRange     '1.8.4',
+210 silly addNameRange     '1.9.0',
+210 silly addNameRange     '2.0.0',
+210 silly addNameRange     '2.0.1',
+210 silly addNameRange     '2.0.2',
+210 silly addNameRange     '2.0.3',
+210 silly addNameRange     '2.0.4',
+210 silly addNameRange     '2.0.5',
+210 silly addNameRange     '2.0.6',
+210 silly addNameRange     '2.0.7',
+210 silly addNameRange     '2.0.8',
+210 silly addNameRange     '2.0.9',
+210 silly addNameRange     '2.1.0',
+210 silly addNameRange     '2.2.0',
+210 silly addNameRange     '2.2.1',
+210 silly addNameRange     '2.3.0',
+210 silly addNameRange     '2.3.1',
+210 silly addNameRange     '2.3.2',
+210 silly addNameRange     '2.3.3' ] ]
+211 verbose addNamed nan@2.3.3
+212 silly addNamed semver.valid 2.3.3
+213 silly addNamed semver.validRange 2.3.3
+214 silly cache afterAdd nan@2.3.3
+215 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\nan\2.3.3\package\package.json not in flight; writing
+216 verbose afterAdd C:\Users\Vicente01\AppData\Roaming\npm-cache\nan\2.3.3\package\package.json written
+217 silly install resolved [ { name: 'bindings',
+217 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+217 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+217 silly install resolved     version: '1.2.1',
+217 silly install resolved     author:
+217 silly install resolved      { name: 'Nathan Rajlich',
+217 silly install resolved        email: 'nathan@tootallnate.net',
+217 silly install resolved        url: 'http://tootallnate.net' },
+217 silly install resolved     repository:
+217 silly install resolved      { type: 'git',
+217 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+217 silly install resolved     main: './bindings.js',
+217 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+217 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+217 silly install resolved     license: 'MIT',
+217 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+217 silly install resolved     _id: 'bindings@1.2.1',
+217 silly install resolved     scripts: {},
+217 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+217 silly install resolved     _from: 'bindings@*',
+217 silly install resolved     _npmVersion: '1.4.14',
+217 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+217 silly install resolved     maintainers: [ [Object], [Object] ],
+217 silly install resolved     dist:
+217 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+217 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+217 silly install resolved     directories: {},
+217 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+217 silly install resolved     readme: 'ERROR: No README data found!' },
+217 silly install resolved   { name: 'nan',
+217 silly install resolved     version: '2.3.3',
+217 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+217 silly install resolved     main: 'include_dirs.js',
+217 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+217 silly install resolved     scripts:
+217 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+217 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+217 silly install resolved        docs: 'doc/.build.sh' },
+217 silly install resolved     contributors:
+217 silly install resolved      [ [Object],
+217 silly install resolved        [Object],
+217 silly install resolved        [Object],
+217 silly install resolved        [Object],
+217 silly install resolved        [Object],
+217 silly install resolved        [Object],
+217 silly install resolved        [Object] ],
+217 silly install resolved     devDependencies:
+217 silly install resolved      { bindings: '~1.2.1',
+217 silly install resolved        commander: '^2.8.1',
+217 silly install resolved        glob: '^5.0.14',
+217 silly install resolved        'node-gyp': '~3.0.1',
+217 silly install resolved        tap: '~0.7.1',
+217 silly install resolved        xtend: '~4.0.0' },
+217 silly install resolved     license: 'MIT',
+217 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+217 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+217 silly install resolved     _id: 'nan@2.3.3',
+217 silly install resolved     _shasum: '64dd83c9704a83648b6c72b401f6384bd94ef16f',
+217 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.3.3.tgz',
+217 silly install resolved     _from: 'nan@>=2.0.5 <3.0.0',
+217 silly install resolved     _npmVersion: '3.3.6',
+217 silly install resolved     _nodeVersion: '5.0.0',
+217 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+217 silly install resolved     dist:
+217 silly install resolved      { shasum: '64dd83c9704a83648b6c72b401f6384bd94ef16f',
+217 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.3.3.tgz' },
+217 silly install resolved     maintainers: [ [Object], [Object] ],
+217 silly install resolved     _npmOperationalInternal:
+217 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+217 silly install resolved        tmp: 'tmp/nan-2.3.3.tgz_1462313618725_0.044748055282980204' },
+217 silly install resolved     directories: {},
+217 silly install resolved     readme: 'ERROR: No README data found!' } ]
+218 info install bindings@1.2.1 into c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+219 info install nan@2.3.3 into c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+220 info installOne bindings@1.2.1
+221 verbose installOne of bindings to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis not in flight; installing
+222 info installOne nan@2.3.3
+223 verbose installOne of nan to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis not in flight; installing
+224 verbose lock using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\bindings-ce627fb679ecfe99.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+225 verbose lock using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\nan-96b1d4625a2cbc91.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+226 silly install write writing bindings 1.2.1 to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+227 silly cache addNamed cb bindings@1.2.1
+228 verbose unbuild node_modules\hiredis\node_modules\bindings
+229 silly install write writing nan 2.3.3 to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+230 silly cache addNamed cb nan@2.3.3
+231 verbose unbuild node_modules\hiredis\node_modules\nan
+232 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings is being purged from base c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+233 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+234 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan is being purged from base c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+235 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+236 verbose tar unpack C:\Users\Vicente01\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+237 verbose tar unpacking to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+238 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings is being purged
+239 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+240 verbose tar unpack C:\Users\Vicente01\AppData\Roaming\npm-cache\nan\2.3.3\package.tgz
+241 verbose tar unpacking to c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+242 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan is being purged
+243 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+244 silly gunzTarPerm modes [ '777', '666' ]
+245 silly gunzTarPerm modes [ '777', '666' ]
+246 silly gunzTarPerm extractEntry package.json
+247 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+248 silly gunzTarPerm extractEntry package.json
+249 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+250 silly gunzTarPerm extractEntry README.md
+251 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+252 silly gunzTarPerm extractEntry bindings.js
+253 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+254 silly gunzTarPerm extractEntry README.md
+255 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+256 silly gunzTarPerm extractEntry include_dirs.js
+257 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+258 silly gunzTarPerm extractEntry nan_converters.h
+259 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+260 silly gunzTarPerm extractEntry LICENSE.md
+261 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+262 silly gunzTarPerm extractEntry doc/node_misc.md
+263 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+264 silly gunzTarPerm extractEntry doc/asyncworker.md
+265 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+266 silly gunzTarPerm extractEntry doc/callback.md
+267 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+268 silly gunzTarPerm extractEntry doc/converters.md
+269 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+270 silly gunzTarPerm extractEntry doc/errors.md
+271 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+272 silly gunzTarPerm extractEntry doc/maybe_types.md
+273 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+274 info preinstall bindings@1.2.1
+275 silly gunzTarPerm extractEntry doc/methods.md
+276 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+277 silly gunzTarPerm extractEntry doc/new.md
+278 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+279 silly install resolved []
+280 verbose about to build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+281 info build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+282 verbose linkStuff [ false,
+282 verbose linkStuff   false,
+282 verbose linkStuff   false,
+282 verbose linkStuff   'c:\\Users\\Vicente01\\Documents\\Trabajo\\Research\\back-end\\node\\soupBits_app\\node_modules\\hiredis\\node_modules' ]
+283 info linkStuff bindings@1.2.1
+284 verbose linkBins bindings@1.2.1
+285 verbose linkMans bindings@1.2.1
+286 verbose rebuildBundles bindings@1.2.1
+287 info install bindings@1.2.1
+288 info postinstall bindings@1.2.1
+289 verbose unlock done using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\bindings-ce627fb679ecfe99.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\bindings
+290 silly gunzTarPerm extractEntry doc/buffers.md
+291 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+292 silly gunzTarPerm extractEntry doc/object_wrappers.md
+293 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+294 silly gunzTarPerm extractEntry doc/persistent.md
+295 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+296 silly gunzTarPerm extractEntry doc/scopes.md
+297 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+298 silly gunzTarPerm extractEntry doc/script.md
+299 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+300 silly gunzTarPerm extractEntry doc/string_bytes.md
+301 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+302 silly gunzTarPerm extractEntry doc/v8_internals.md
+303 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+304 silly gunzTarPerm extractEntry doc/v8_misc.md
+305 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+306 silly gunzTarPerm extractEntry nan.h
+307 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+308 silly gunzTarPerm extractEntry nan_callbacks.h
+309 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+310 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+311 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+312 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+313 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+314 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+315 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+316 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+317 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+318 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+319 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+320 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+321 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+322 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+323 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+324 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+325 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry nan_new.h
+327 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+328 silly gunzTarPerm extractEntry nan_object_wrap.h
+329 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+330 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+331 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+332 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+333 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+334 silly gunzTarPerm extractEntry nan_string_bytes.h
+335 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+336 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+337 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+338 silly gunzTarPerm extractEntry nan_weak.h
+339 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+340 silly gunzTarPerm extractEntry CHANGELOG.md
+341 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+342 silly gunzTarPerm extractEntry tools/package.json
+343 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+344 silly gunzTarPerm extractEntry tools/README.md
+345 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+346 silly gunzTarPerm extractEntry tools/1to2.js
+347 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+348 info preinstall nan@2.3.3
+349 silly install resolved []
+350 verbose about to build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+351 info build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+352 verbose linkStuff [ false,
+352 verbose linkStuff   false,
+352 verbose linkStuff   false,
+352 verbose linkStuff   'c:\\Users\\Vicente01\\Documents\\Trabajo\\Research\\back-end\\node\\soupBits_app\\node_modules\\hiredis\\node_modules' ]
+353 info linkStuff nan@2.3.3
+354 verbose linkBins nan@2.3.3
+355 verbose linkMans nan@2.3.3
+356 verbose rebuildBundles nan@2.3.3
+357 info install nan@2.3.3
+358 info postinstall nan@2.3.3
+359 verbose unlock done using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\nan-96b1d4625a2cbc91.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis\node_modules\nan
+360 verbose about to build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+361 info build c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+362 verbose linkStuff [ false,
+362 verbose linkStuff   false,
+362 verbose linkStuff   false,
+362 verbose linkStuff   'c:\\Users\\Vicente01\\Documents\\Trabajo\\Research\\back-end\\node\\soupBits_app\\node_modules' ]
+363 info linkStuff hiredis@0.4.1
+364 verbose linkBins hiredis@0.4.1
+365 verbose linkMans hiredis@0.4.1
+366 verbose rebuildBundles hiredis@0.4.1
+367 verbose rebuildBundles [ 'bindings', 'nan' ]
+368 info install hiredis@0.4.1
+369 verbose unsafe-perm in lifecycle true
+370 info hiredis@0.4.1 Failed to exec install script
+371 verbose unlock done using C:\Users\Vicente01\AppData\Roaming\npm-cache\_locks\hiredis-880c4013c407f704.lock for c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+372 verbose stack Error: hiredis@0.4.1 install: `node-gyp rebuild`
+372 verbose stack Exit status 1
+372 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+372 verbose stack     at EventEmitter.emit (events.js:110:17)
+372 verbose stack     at ChildProcess.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+372 verbose stack     at ChildProcess.emit (events.js:110:17)
+372 verbose stack     at maybeClose (child_process.js:1015:16)
+372 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+373 verbose pkgid hiredis@0.4.1
+374 verbose cwd c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+375 error Windows_NT 6.3.9600
+376 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "hiredis" "--save"
+377 error node v0.12.2
+378 error npm  v2.7.4
+379 error code ELIFECYCLE
+380 error hiredis@0.4.1 install: `node-gyp rebuild`
+380 error Exit status 1
+381 error Failed at the hiredis@0.4.1 install script 'node-gyp rebuild'.
+381 error This is most likely a problem with the hiredis package,
+381 error not with npm itself.
+381 error Tell the author that this fails on your system:
+381 error     node-gyp rebuild
+381 error You can get their info via:
+381 error     npm owner ls hiredis
+381 error There is likely additional logging output above.
+382 verbose exit [ 1, true ]
+383 verbose unbuild node_modules\hiredis
+384 info preuninstall hiredis@0.4.1
+385 info uninstall hiredis@0.4.1
+386 verbose unbuild rmStuff hiredis@0.4.1 from c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules
+387 info postuninstall hiredis@0.4.1
+388 silly gentlyRm c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis is being purged from base c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app
+389 verbose gentlyRm don't care about contents; nuking c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+390 silly vacuum-fs purging c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules\hiredis
+391 silly vacuum-fs quitting because other entries in c:\Users\Vicente01\Documents\Trabajo\Research\back-end\node\soupBits_app\node_modules
