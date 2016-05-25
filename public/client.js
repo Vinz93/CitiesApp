@@ -40,7 +40,7 @@ $(function(){
 		var content , block;
 		for(var i in blocks){
 			block = blocks[i];
-			content = '<i class="fa fa-trash" aria-hidden="true" data-block= '+ block +'></i><a href="/blocks/'+ block + '">' + block + '</a>';
+			content = '<i class="fa fa-trash" aria-hidden="true" data-block= '+ block +'></i><a href="/cities/'+ block + '">' + block + '</a>';
 			list.push($('<li>', { html : content } ));
 		}
 
