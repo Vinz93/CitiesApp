@@ -20,13 +20,16 @@ $(function(){
 	$('form').on('submit', function(event){
 		event.preventDefault();
 		var form = $(this);
-		var blockData = form.serialize();
-		console.log('blockData : ',blockData);
+		var cityData = form.serialize();
+		console.log('cityData : ',cityData);
 
 		$.ajax({
-			type: 'POST', url: '/cities', data: blockData
-		}).done(function(blockName){
-			appendToList([blockName]);
+			type: 'POST', url: '/cities', data: cityData
+		}).error(function () {
+			alert('Invalid City');
+		})
+		.done(function(cityName){
+			appendToList([cityName]);
 			form.trigger('reset');
 		});
 	});
