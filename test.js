@@ -8,16 +8,16 @@ describe('Request to the root path', function () {
       .get('/')
       .expect(200,done());
   });
-  it(' Returns a HTML format',function (done) {
+  it('Returns a HTML format',function (done) {
     request(app)
     .get('/')
     .expect('Content-Type',/html/,done);
   });
-  // it('Returns an index file with cities',function (done) {
-  //   request(app)
-  //   .get('/')
-  //   .expect(/cities/i, done);
-  // });
+  it('Returns an index file with cities',function (done) {
+    request(app)
+    .get('/')
+    .expect(/cities/i, done);
+  });
 });
 
 describe('Listing cities on /cities', function () {
@@ -30,7 +30,7 @@ describe('Listing cities on /cities', function () {
   it('Returns JSON format',function (done) {
     request(app)
     .get('/cities')
-    .expect('Content-Type','application/json; charset=utf-8',done);
+    .expect('Content-Type',/json/,done);
   });
 
   // it('Returns initial cities', function (done) {
@@ -75,5 +75,17 @@ describe('Show city Info',function () {
     request(app)
     .get('/cities/Canada')
     .expect(200,done);
+  });
+
+  it('return HTML format', function (done) {
+    request(app)
+    .get('/cities/Canada')
+    .expect('Content-Type',/html/,done);
+  });
+
+  it('return the information of the giving city', function (done) {
+    request(app)
+    .get('/cities/Canada')
+    .expect(/cold/,done);
   });
 });

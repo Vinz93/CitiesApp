@@ -7,12 +7,10 @@ var redis = require('redis');
 var client = redis.createClient();
 
 var router = express.Router();
-// app.engine('html', require('ejs'));
 
-client.hset('cities','Canada', 'description');
+client.hset('cities','Canada', 'cold');
 client.hset('cities','Australia', 'description');
 client.hset('cities','Espana', 'description');
-
 
 router.route('/')
   .get(function (req , res) {
@@ -38,8 +36,6 @@ router.route('/:name')
     client.hget('cities',req.params.name , function (error, description) {
       if(error) throw error;
       res.status(200).render('show.ejs',{city: {name: req.params.name, description: description}});
-      // res.render('show.ejs');
-      // res.status(200).json(description);
     });
   })
     .delete(function (req, res) {

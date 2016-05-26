@@ -1,5 +1,5 @@
 body {
-  background: url(/assets/tree.jpg) no-repeat center center fixed;
+  background: url(/assets/bg-color.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,4 +40,21 @@ legend{
   margin-right: 10px;
   padding: 1px;
   color: red;
+}
+
+
+.detail-container{
+  background-color: white;
+  padding: 10px;
+}
+
+.detail-container p , .detail-container h2{
+  text-align: center;
+}
+.detail-container h2{
+font-weight: bold;
+}
+
+.detail-row {
+  margin-top: 150px;
 }
